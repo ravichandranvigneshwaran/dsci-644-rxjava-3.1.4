@@ -23,6 +23,7 @@ public final class CompletableConcatArray extends Completable {
     final CompletableSource[] sources;
 
     public CompletableConcatArray(CompletableSource[] sources) {
+        //FIXME: may expose internal representation by reference to mutable object
         this.sources = sources;
     }
 
