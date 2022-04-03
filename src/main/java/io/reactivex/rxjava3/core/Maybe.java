@@ -5373,7 +5373,9 @@ public abstract class Maybe<T> implements MaybeSource<T> {
 
         try {
             subscribeActual(observer);
-        } catch (NullPointerException ex) {
+        }
+        //FIXME: Avoid catching NullPointerExcception
+        catch (NullPointerException ex) {
             throw ex;
         } catch (Throwable ex) {
             Exceptions.throwIfFatal(ex);
