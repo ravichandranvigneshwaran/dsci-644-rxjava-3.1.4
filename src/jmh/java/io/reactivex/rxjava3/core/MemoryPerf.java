@@ -64,6 +64,7 @@ public final class MemoryPerf {
 
         Disposable upstream;
 
+        //FIXME: UrF: Unread field
         @Override
         public void onSubscribe(Disposable d) {
             this.upstream = d;
