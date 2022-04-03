@@ -80,6 +80,7 @@ implements Disposable, SchedulerRunnableIntrospection {
     }
 
     private void cancelFuture(Future<?> future) {
+        //FIXME: use equals() to compare object reference
         if (runner == Thread.currentThread()) {
             future.cancel(false);
         } else {
