@@ -171,6 +171,7 @@ public final class FlowableFlatMapStream<T, R> extends Flowable<R> {
 
         @Override
         public void onNext(T t) {
+            // TODO: Nested conditional statement can be combined ( Maintainability )
             if (sourceMode != QueueFuseable.ASYNC) {
                 if (!queue.offer(t)) {
                     upstream.cancel();
