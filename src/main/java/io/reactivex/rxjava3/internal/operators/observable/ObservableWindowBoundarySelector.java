@@ -72,6 +72,7 @@ public final class ObservableWindowBoundarySelector<T, B, V> extends AbstractObs
         final AtomicBoolean downstreamDisposed;
 
         final AtomicLong requested;
+        //FIXME: UuF: Unused variable (Efficiency)
         long emitted;
 
         volatile boolean upstreamCanceled;
