@@ -63,7 +63,7 @@ public final class MemoryPerf {
     io.reactivex.rxjava3.core.MaybeObserver<Object>, io.reactivex.rxjava3.core.CompletableObserver {
 
         Disposable upstream;
-        
+
 //        @Override
 //        public void onSubscribe(Disposable d) {
 //            this.upstream = d;
