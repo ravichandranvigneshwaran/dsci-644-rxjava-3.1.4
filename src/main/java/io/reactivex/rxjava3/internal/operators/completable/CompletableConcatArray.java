@@ -21,10 +21,10 @@ import io.reactivex.rxjava3.internal.disposables.SequentialDisposable;
 
 public final class CompletableConcatArray extends Completable {
     final CompletableSource[] sources;
-
+    CompletableSource[] sources2;
     public CompletableConcatArray(CompletableSource[] sources) {
-        //FIXME: may expose internal representation by reference to mutable object
         this.sources = sources;
+        sources2 = sources;
     }
 
     @Override
