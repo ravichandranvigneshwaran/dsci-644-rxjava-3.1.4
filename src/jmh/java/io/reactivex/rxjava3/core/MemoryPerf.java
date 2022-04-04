@@ -37,7 +37,7 @@ public final class MemoryPerf {
 
         org.reactivestreams.Subscription upstream;
 
-        
+
 //        @Override
 //        public void onSubscribe(Subscription s) {
 //            this.upstream = s;
@@ -63,12 +63,11 @@ public final class MemoryPerf {
     io.reactivex.rxjava3.core.MaybeObserver<Object>, io.reactivex.rxjava3.core.CompletableObserver {
 
         Disposable upstream;
-
-        //FIXME: UrF: Unread field
-        @Override
-        public void onSubscribe(Disposable d) {
-            this.upstream = d;
-        }
+        
+//        @Override
+//        public void onSubscribe(Disposable d) {
+//            this.upstream = d;
+//        }
 
         @Override
         public void onComplete() {
